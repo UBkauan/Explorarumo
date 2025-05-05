@@ -1,0 +1,42 @@
+.container-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 90%;
+  height: 750px; /* altura do banner */
+  background-size: cover;
+  background-image: url(img/mapa-tema-escuro.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.banner-content {
+  font-family: "Syne", monospace;
+  
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* ajuste como quiser */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 4%;
+  stroke: #E3E3E3;
+  fill: #E3E3E3;
+  line-height: 0.9;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  max-width: 90%;
+}
+

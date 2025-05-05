@@ -1,0 +1,23 @@
+.baseboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 250px;
+  background: linear-gradient(to top, #d1b855, #e6e6e6);
+}
+
+.baseboard-name-project h1{
+    font-size: 66px;
+    font-family: 'Syne', monospace;
+    line-height: 190%;
+    letter-spacing: -6%;
+}
+.baseboard-contact h1{
+    font-size: 48px;
+    font-family: 'Syne', monospace;    
+}
+
+.baseboard-contact p{
+    font-family: 'Syne mono', monospace;
+    font-size: 20px;
+}

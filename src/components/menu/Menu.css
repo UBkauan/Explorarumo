@@ -1,0 +1,48 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #E6E6E6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 250px;
+  background: linear-gradient(to bottom, #d1b855, #e6e6e6);
+  height: 100px;
+}
+
+.logo-box{
+  height: 100px;
+  width: 200px;background-image: url(logo.svg);
+  background-size: cover;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  color: black;
+  font-family: "Syne Mono", monospace;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+.button:hover {
+}

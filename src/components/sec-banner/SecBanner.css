@@ -1,0 +1,40 @@
+.sec-baner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template {
+  margin-top: 90px;
+  width: 90%;
+  height: 750px;
+  align-items: center;  
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+  gap: 150px;
+}
+
+.sec-banner-img {
+  background-image: url(img/ponto-onibus.png);
+  width: 570px;
+  height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sec-banner-content h1{
+  font-family: 'Syne', monospace;
+  font-size: 100px;
+  line-height: 98%;
+  letter-spacing: 10%;
+  align-items: start;
+  color: #383838;
+  fill: #383838;
+}
+
+.sec-banner-content p{
+  font-family: 'Syne mono', monospace;
+  line-height: 120%;
+  font-size: 25px;
+}
