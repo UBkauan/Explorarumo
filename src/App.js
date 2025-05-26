@@ -3,6 +3,7 @@ import NavMenu from './components/menu/Menu'
 import Banner from './components/banner/Banner'
 import SecBanner from './components/sec-banner/SecBanner';
 import Baseboard from './components/baseboard/Baseboard';
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <SecBanner />
       <Baseboard />
+      <Outlet />
     </div>
 
   );

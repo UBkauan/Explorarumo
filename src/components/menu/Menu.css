@@ -18,12 +18,13 @@ body {
   background-size: cover;
 }
 
-.buttons {
+.Link{
   display: flex;
   gap: 20px;
+  background: transparent;
 }
 
-.button {
+.Link a{
   background: transparent;
   border: none;
   color: black;
@@ -34,7 +35,7 @@ body {
   padding: 5px 0;
 }
 
-.button::after {
+.Link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,5 +45,3 @@ body {
   background-color: black;
 }
 
-.button:hover {
-}

@@ -1,4 +1,5 @@
 import './Menu.css';
+import { Link } from 'react-router-dom';
 
 const MenuComponente = () => {
 
@@ -7,8 +8,7 @@ const MenuComponente = () => {
       <div className="logo-box"></div>
 
       <div className="buttons">
-        <Button>Login</Button>
-        <Button>Cadastro</Button>
+        <Link to="/pontos">Pontos</Link>
       </div>
     </header>
   );
