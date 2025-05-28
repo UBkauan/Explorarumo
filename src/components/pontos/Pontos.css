@@ -111,4 +111,31 @@ body {
     position: absolute;
     top: 230px;
     right: 500px;
+    border-radius: 10px;
+    box-sizing: border-box 2px;
+    box-shadow: black 1px 1px 1px ;
+}
+@media (max-width: 1600px) {
+  #imagemPinjente {
+    top: 250px;
+    right: 350px;
+    width: 300px;
+    height: 225px;
+  }
+}
+@media (max-width: 1300px) {
+  #imagemPinjente {
+    top: 250px;
+    right: 300px;
+    width: 300px;
+    height: 225px;
+  }
+}
+@media (max-width: 1000) {
+  #imagemPinjente {
+    top: 120px;
+    right: 550px;
+    width: 200px;
+    height: 150px;
+  }
 }
