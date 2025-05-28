@@ -40,34 +40,52 @@ function TransportMap() {
 
   return (
     <div className="h-screen flex flex-col items-center">
-      <h1 className="text-2xl font-bold mt-4">Rotas do Transporte Escolar</h1>
-      <Link to="/" className="botao">
+      <header className="header">
+      <div className="logo-box"></div>
+
+      <div className="buttons">
+       <Link to="/" id="botao">
         Voltar
       </Link>
-      <Map height={500} defaultCenter={center} defaultZoom={zoom}>
-        {pontos.map((ponto) => (
-          <Marker
-            key={ponto.id}
-            anchor={ponto.coords}
-            onClick={() =>
-              setSelecionado(selecionado === ponto.id ? null : ponto.id)
-            }
-          >
-            {selecionado === ponto.id && (
-              <div style={{
-                background: 'white',
-                padding: '4px 8px',
-                borderRadius: '8px',
-                boxShadow: '0 0 5px rgba(0,0,0,0.3)',
-                fontSize: '12px',
-                marginBottom: '4px'
-              }}>
-                {ponto.nome}
-              </div>
-            )}
-          </Marker>
-        ))}
-      </Map>
+      </div>
+    </header>
+      
+    <div id="container-banner">
+      <section id="banner">
+        <div id="banner-content">          
+          <h1>Nesta página, visualize as rotas que o ônibus passará, e quais pontos de parada aguardar</h1>
+        </div>
+        
+      </section>
+      <div id="imagemPinjente"></div>  
+    </div>
+
+      <div className="map-section">
+  <div className="map-frame">
+    <Map height={500} defaultCenter={center} defaultZoom={zoom}>
+      {pontos.map((ponto) => (
+        <Marker
+          key={ponto.id}
+          anchor={ponto.coords}
+          onClick={() =>
+            setSelecionado(selecionado === ponto.id ? null : ponto.id)
+          }
+        >
+          {selecionado === ponto.id && (
+            <div className="marker-label">
+              {ponto.nome}
+            </div>
+          )}
+        </Marker>
+      ))}
+    </Map>
+  </div>
+</div>
+
+<div className="baseboard-container">      
+        <div className="baseboard-name-project"><h1>EXPLORARUMO</h1></div>
+        <div className="baseboard-contact"><h1>CONTATO</h1><p>email@exemplo.com <br /> ( 555 ) 555-555</p></div>      
+    </div>
     </div>
   );
 }

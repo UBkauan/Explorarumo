@@ -8,8 +8,9 @@ const MenuComponente = () => {
       <div className="logo-box"></div>
 
       <div className="buttons">
-        <Link to="/pontos">Pontos</Link>
-      </div>
+  <Link to="/pontos" className="botao">Pontos</Link>
+</div>
+
     </header>
   );
 };

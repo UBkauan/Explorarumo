@@ -12,36 +12,53 @@ body {
   height: 100px;
 }
 
-.logo-box{
+.logo-box {
   height: 100px;
-  width: 200px;background-image: url(logo.svg);
+  width: 200px;
+  background-image: url(logo.svg);
   background-size: cover;
 }
 
-.Link{
-  display: flex;
-  gap: 20px;
-  background: transparent;
-}
-
-.Link a{
+/* Estilo padronizado para botões com aparência leve e elegante */
+.botao {
+  font-family: "Syne Mono", monospace;
+  font-size: 18px;
   background: transparent;
   border: none;
   color: black;
-  font-family: "Syne Mono", monospace;
-  font-size: 18px;
+  padding: 8px 16px;
   cursor: pointer;
-  position: relative;
-  padding: 5px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 5px;
 }
 
-.Link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background-color: black;
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* Resto do CSS já existente */
+
+.marker-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marker-label {
+  background: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.marker-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 

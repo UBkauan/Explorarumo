@@ -1,20 +1,114 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #e6e6e6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 250px;
+  background: linear-gradient(to bottom, #d1b855, #e6e6e6);
+  height: 100px;
+}
+
+.logo-box {
+  height: 100px;
+  width: 200px;
+  background-image: url(logo.svg);
+  background-size: cover;
+}
+
+/* Novo estilo simplificado para o botão "Voltar" */
+#botao {
+  font-family: "Syne Mono", monospace;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 5px;
+}
+
+#botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 .marker-wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .marker-label {
-background: white;
-padding: 4px 8px;
-border-radius: 8px;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-font-size: 12px;
-margin-bottom: 4px;
-white-space: nowrap;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 .marker-icon {
-font-size: 24px;
-cursor: pointer;
+  font-size: 24px;
+  cursor: pointer;
+}
+.map-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.map-frame {
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 1000px;
+}
+
+#container-banner {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  
+}
+
+#banner {
+  width: 72%;
+  height: 550px; /* altura do banner */
+  background-size: cover;
+  background-image: url(img/mapa-tema-escuro.png);
+}
+
+#banner-content {
+  font-family: "Syne Mono", monospace;
+  width: 400px;
+  padding-left: 100px;
+  padding-top: 90px;
+}
+
+#banner-content h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 4%;
+  line-height: 0.9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+}
+
+#imagemPinjente{
+    background-size: cover;
+    background-image: url(img/pingente.png);
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 230px;
+    right: 500px;
 }
