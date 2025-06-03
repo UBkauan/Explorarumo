@@ -34,7 +34,32 @@ function TransportMap() {
     { id: 13, nome: "lago municipal", coords: [-22.18026, -46.74449] },
     { id: 14, nome: "EMEB Augusta Bortolucci Latarini", coords: [-22.17935, -46.74769] },
     { id: 15, nome: "esquina do bar do palmerense", coords: [-22.17829, -46.74981] },
-  ];
+    { id: 17, nome: "Assembléia de Deus", coords: [-22.193261, -46.777957] },
+    { id: 18, nome: "Ponto de Ônibus", coords: [-22.191381, -46.776027] },
+    { id: 19, nome: "Ponto de Ônibus", coords: [-22.189820, -46.777331] },
+    { id: 20, nome: "Ponto de Ônibus", coords: [-22.191280, -46.778835] },
+    { id: 21, nome: "helio4", coords: [-22.190580, -46.780205] },
+    { id: 22, nome: "Ponto de Ônibus", coords: [-22.192327, -46.781187] },
+    { id: 23, nome: "Espetinho do Zé Dito", coords: [-22.195557, -46.771277] },
+    { id: 24, nome: "Ponto de Ônibus", coords: [-22.196469, -46.770066] },
+    { id: 25, nome: "Ponto de Ônibus", coords: [-22.203473, -46.759133] },
+    { id: 26, nome: "Ponto de Ônibus", coords: [-22.204699, -46.756168] },
+    { id: 27, nome: "Escadão", coords: [-22.204495, -46.754574] },
+    { id: 28, nome: "Bilheteria do Estadio", coords: [-22.201433, -46.755886] },
+    { id: 29, nome: "Budega's bar", coords: [-22.198497, -46.750954] },
+    { id: 30, nome: "Palácio do café", coords: [-22.195827, -46.745215] },
+    { id: 31, nome: "Cardeal", coords: [-22.197112, -46.743708] },
+    { id: 32, nome: "Sindicato Sinsaude", coords: [-22.193070, -46.743942] },
+    { id: 33, nome: "Padaria Isabeli", coords: [-22.190439, -46.743865] },
+    { id: 34, nome: "Juca", coords: [-22.183310, -46.743233] },
+    { id: 35, nome: "Hospital", coords: [-22.193812, -46.742166] },
+    { id: 36, nome: "COC", coords: [-22.190397, -46.741182] },
+    { id: 37, nome: "Padaria Mama Mia", coords: [-22.188180, -46.741563] },
+    { id: 38, nome: "Bar do Badola", coords: [-22.201711, -46.762309] },
+    { id: 39, nome: "Abelardo", coords: [-22.201449, -46.760374] },
+    { id: 40, nome: "El Shaday", coords: [-22.201447, -46.766082] },
+    { id: 41, nome: "Baitakão do Irmão", coords: [-22.201395, -46.766972] },
+      ];
 
   const [selecionado, setSelecionado] = useState(null);
 
